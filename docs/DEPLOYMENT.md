@@ -73,6 +73,11 @@ DATABASE_URL="postgres://…" APP_URL="https://…" npm run bootstrap-admin -- y
 
 This prints a one-time setup link.
 
+Or, without database access: set `BOOTSTRAP_SUPER_ADMIN_EMAIL` and a random secret `BOOTSTRAP_TOKEN` (32+ characters,
+mark it *Sensitive*), redeploy, and open `${APP_URL}/bootstrap/<BOOTSTRAP_TOKEN>`. It creates the Super Admin and
+opens the password setup page. The link stops working once a Super Admin has set a password or signed in; delete
+both variables afterwards.
+
 ## 4. Access control
 
 | Role | Can do |

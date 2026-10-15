@@ -4,10 +4,10 @@
   --text: #1b2130;
   --muted: #5d6677;
   --border: #dde1e8;
-  --brand: #13294b;
+  --brand: #142337;
   --brand-contrast: #ffffff;
-  --accent: #b8902f;
-  --link: #1d4ed8;
+  --accent: #bca28d;
+  --link: #1f4f8f;
   --ok-bg: #e6f4ea;
   --ok-fg: #17663a;
   --warn-bg: #fff4dc;
@@ -46,8 +46,12 @@ p { margin: 0 0 0.75rem; }
   max-width: 1200px; margin: 0 auto; padding: 0.6rem 1rem;
   display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem;
 }
-.brand { font-weight: 700; color: inherit; text-decoration: none; letter-spacing: 0.01em; }
-.brand span { color: var(--accent); }
+.brand { display: flex; align-items: center; gap: 0.75rem; color: inherit; text-decoration: none; }
+.brand img { height: 34px; width: auto; display: block; }
+.brand-app { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); border-left: 1px solid rgba(188, 162, 141, 0.5); padding-left: 0.75rem; }
+.topbar { border-bottom: 3px solid var(--accent); }
+.auth-logo { display: block; height: 44px; width: auto; margin: 0.25rem auto 1.25rem; }
+@media (max-width: 480px) { .brand img { height: 28px; } .brand-app { display: none; } }
 .nav { display: flex; flex-wrap: wrap; gap: 0.25rem; flex: 1; }
 .nav a {
   color: #dbe3f0; text-decoration: none; padding: 0.3rem 0.6rem; border-radius: 6px; font-size: 0.92rem;

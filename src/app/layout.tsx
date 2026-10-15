@@ -30,8 +30,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <header className="topbar">
           <div className="topbar-inner">
-            <Link href="/" className="brand">
-              IND Global Realty <span>·</span> Content Tracker
+            <Link href="/" className="brand" aria-label="IND Global Realty Content Tracker — home">
+              <img src="/brand/logo-white.png" alt="IND Global Realty" width={370} height={84} />
+              <span className="brand-app">Content Tracker</span>
             </Link>
             {user && (
               <nav className="nav" aria-label="Main">

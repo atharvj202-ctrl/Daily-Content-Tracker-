@@ -37,6 +37,7 @@ export default async function SetupPage({
   return (
     <div className="narrow" style={{ margin: "0 auto" }}>
       <div className="card">
+        <img className="auth-logo" src="/brand/logo-navy.png" alt="IND Global Realty" width={370} height={84} />
         <h1>Set up your account</h1>
         <Flash sp={sp} />
         {!passwordLoginEnabled() ? (

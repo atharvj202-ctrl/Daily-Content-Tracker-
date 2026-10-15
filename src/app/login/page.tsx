@@ -46,6 +46,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   return (
     <div className="narrow" style={{ margin: "0 auto" }}>
       <div className="card">
+        <img className="auth-logo" src="/brand/logo-navy.png" alt="IND Global Realty" width={370} height={84} />
         <h1>Sign in</h1>
         <p className="muted">Daily Content Tracker for IND Global Realty. Only approved team members can sign in.</p>
         <Flash sp={sp} />
